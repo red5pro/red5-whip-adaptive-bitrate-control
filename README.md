@@ -302,3 +302,7 @@ Client-side ABR for WebRTC publishing is a tractable problem with the tools the 
 The key insight in this example is that **reliable detection requires discipline**: using delta-based metrics instead of raw cumulative counters, requiring consecutive bad samples before triggering a state change, and demanding that *all* conditions return to healthy before declaring recovery. Without those guardrails, an ABR system can thrash — rapidly toggling quality up and down in response to momentary spikes — which is often worse for the viewer experience than a sustained reduction in quality.
 
 The `StatsMonitor` class here is intentionally self-contained. It knows nothing about Red5, WHIP, or any particular SDK — it takes a stats report in and calls a function when conditions change. That separation makes it straightforward to adapt to any WebRTC publishing stack, tune for a specific application's tolerance, or extend with additional signals as your understanding of your network environment grows.
+
+## Red5 AI Skills
+
+Use the **Red5 AI skills** to help your AI coding assistant build real-time video applications with Red5 Pro and Red5 Cloud, with guidance grounded in Red5 documentation. [Download the skill from GitHub](https://github.com/red5pro/red5pro-skills) or install it by running `npx red5pro-skills` in your terminal.
